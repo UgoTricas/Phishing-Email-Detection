@@ -10,6 +10,9 @@ Ce projet vise à détecter les e-mails de phishing à l'aide de plusieurs modè
 
 ## Données utilisées
 
+Les données sont disponibles à l’adresse suivante :  
+[https://www.kaggle.com/datasets/subhajournal/phishingemails](https://www.kaggle.com/datasets/subhajournal/phishingemails)
+
 Le jeu de données contient des milliers d’e-mails classés comme *Safe Email* ou *Phishing Email*. On observe un déséquilibre modéré entre les deux classes (environ 60 % / 40 %).
 
 ---
