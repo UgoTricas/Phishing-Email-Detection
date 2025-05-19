@@ -10,6 +10,9 @@ Starting from a labeled dataset of emails (classified as "Safe" or "Phishing"), 
 
 ## Data Used
 
+The data can be found at the following link:  
+[https://www.kaggle.com/datasets/subhajournal/phishingemails](https://www.kaggle.com/datasets/subhajournal/phishingemails)
+
 The dataset contains thousands of email texts labeled as either *Safe Email* or *Phishing Email*. It has a moderate class imbalance (around 60% / 40%).
 
 ---
