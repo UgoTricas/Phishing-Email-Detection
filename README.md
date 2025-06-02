@@ -1,10 +1,8 @@
-# Phishing Email Detection via Supervised Classification
+# Phishing Email Detection and Decision Taking
 
 🇫🇷 [Lire la version française](README_fr.md)
 
-This project explores the detection of phishing emails using several supervised machine learning models.
-
-Starting from a labeled dataset of emails (classified as "Safe" or "Phishing"), the objective is to evaluate and compare different models to identify which performs best at minimizing false predictions — especially in a context where the cost of different types of errors may vary.
+This project evaluates different Machine Learning models to detect phishing emails, incorporating a cost function to guide decision-making based on the decision-maker’s aversion to false positives and false negatives.
 
 ---
 
@@ -30,14 +28,12 @@ The analysis proceeds in several steps:
 
 - Logistic Regression  
 - Support Vector Classifier  
-- Multinomial Naive Bayes  
 - Random Forest Classifier  
 - GridSearchCV to find optimal hyperparameters  
-- F1-score and AUC (ROC/PR) used to compare model performance
 
 ### 3. Model Comparison
 
-- All models perform well on traditional metrics  
+- All models perform well  
 - Focus shifts to confusion matrices to assess the nature of errors  
 - Function of cost introduced to guide decision-making based on the decision-maker’s aversion to false positives or false negatives  
 
@@ -45,11 +41,7 @@ The analysis proceeds in several steps:
 
 - Identification of the most influential words for predicting phishing vs safe emails 
 - Displaying the top words associated with phishing and safe emails based on their coefficients in the logistic regression model
-
-### 5. Personal Email Testing
-
-- Applying the trained logistic regression model to personally received phishing and safe emails to evaluate the model’s real-world performance  
-
+  
 ---
 
 ## Notebooks
