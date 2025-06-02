@@ -1,10 +1,8 @@
-# Détection d'e-mails de phishing par classification supervisée
+# Détection d'e-mails de phishing et prise de décision
 
 🇬🇧/🇺🇸 [Read the English version](README.md)
 
-Ce projet vise à détecter les e-mails de phishing à l'aide de plusieurs modèles supervisés d’apprentissage automatique.
-
-À partir d’un jeu de données étiqueté (e-mails classés comme "légitimes" ou "phishing"), l’objectif est d’évaluer et comparer les performances de différents modèles afin d’identifier celui qui minimise au mieux les erreurs de prédiction — en tenant compte du coût potentiellement asymétrique entre les faux positifs et faux négatifs.
+Ce projet évalue différents modèles de Machine Learning pour détecter les e-mails de phishing, en intégrant une fonction de coût pour orienter la décision selon l’aversion du décideur aux faux positifs et faux négatifs.
 
 ---
 
@@ -30,10 +28,8 @@ L’analyse est structurée en plusieurs étapes :
 
 - Régression Logistique  
 - Support Vector Classifier  
-- Multinomial Naive Bayes  
 - Random Forest Classifier  
 - Optimisation des hyperparamètres via GridSearchCV  
-- Comparaison basée sur le F1-score et l'AUC (ROC/PR)
 
 ### 3 - Comparaison et prise de décision
 
@@ -45,10 +41,6 @@ L’analyse est structurée en plusieurs étapes :
 
 - Identification des mots les plus influents pour prédire les emails de phishing vs les emails sûrs
 - Affichage des mots associés au phishing et aux emails sûrs en fonction de leurs coefficients dans le modèle de régression logistique
-
-### 5 - Test sur des Emails Personnels
-
-- Application du modèle de régression logistique entraîné sur des emails de phishing et sûrs reçus personnellement pour évaluer les performances du modèle dans un contexte réel
 
 ---
 
